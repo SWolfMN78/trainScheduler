@@ -18,7 +18,7 @@
 <body>
 
     <div class="cContainer m-3">
-        <div class="jumbotron jumbotron-fluid border rounded-bottom p-4">
+        <div class="jumbotron jumbotron-fluid border rounded-bottom p-4 text-center">
             <div class="container">
                 <h1 class="display-4">Metro Train Times</h1>
                 <p class="lead">Let's find your times! Choo Choo</p>
@@ -27,7 +27,7 @@
 
         <div class="cTrainTable m-3 p-0">
             <div class="row">
-                <div class="col font-weight-bold border border-primary rounded pt-1 cTrianTimes" id="iTrainTimes">Train Times:
+                <div class="col table font-weight-bold border border-primary rounded pt-1 cTrianTimes" id="iTrainTimes">Train Times:
                     <table class="table table-striped table-hover font-weight-normal cTrainTable">
                         <thead class="thead-dark">
                             <tr>
@@ -68,30 +68,29 @@
 
         <div class="cTrainForm rounded m-3">
             <div class="row">
-                <div class="col font-weight-bold border border-primary rounded p-3 cFrmInput " id="iFrmInput">Add Train Info Below:
+                <div class="col font-weight-bold border border-primary rounded py-2 cFrmInput" id="iFrmInput">Add Train Info Below:
                     <form>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Train Name:</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Train Name">
+                        <div class="form-group pt-2">
+                            <label for="lblTrainName">Train Name:</label>
+                            <input type="text" class="form-control" id="iTrainName" placeholder="Train Name">
                         </div>
 
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Destination:</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Destination">
+                            <label for="lblDestination">Destination:</label>
+                            <input type="text" class="form-control" id="iDestin" placeholder="Suger fields">
                         </div>
 
                         <div class="form-group">
-                            <label for="exampleInputPassword1">First Train Time (HH:mm - military time):</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="First Train Time">
+                            <label for="lblTrainTime">First Train Time (HH:mm - military time):</label>
+                            <input type="text" class="form-control" id="iTrainTime" placeholder="21:09">
                         </div>
 
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Frequency (min's):</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Frequency">
+                            <label for="lblFreq">Frequency (min's):</label>
+                            <input type="text" class="form-control" id="iFreq" placeholder="27">
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Submit</button>
-
+                        <button type="submit" class="btn btn-primary" id="iSubmitBtn">Submit</button>
                     </form>
                 </div>
             </div>
